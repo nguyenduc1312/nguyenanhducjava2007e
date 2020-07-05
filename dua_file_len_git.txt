@@ -1,0 +1,4 @@
+1,tạo file
+2,git status --> xem file mới
+3,git add.<đường dẫn đến file>
+4,git commit -m"<"mô tả">
