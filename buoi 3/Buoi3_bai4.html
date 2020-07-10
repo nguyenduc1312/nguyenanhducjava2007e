@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1000px;
+            font-weight: bold;
+            margin: 0px auto;
+        }
+
+        .menu1 ul{
+            list-style: none;
+        }
+        .menu1 ul li{
+            display: inline-table;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            background-color: pink;
+            text-align: center;
+            position: relative;
+        }
+        .menu1 ul li:hover{
+            background-color: skyblue;
+        }
+        
+
+        .menu1 ul li .menu2{
+            display: none;
+            position: absolute;
+        }
+        .menu1 ul li:hover .menu2{
+            display: block;
+        }
+        .menu1 ul li ul{
+            width: 150px;
+            height: 50px;
+            display: block;
+        }
+        .menu1 ul ul li{
+            right: 40px;
+            border-top: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu1">
+        <ul>
+            <li>Trang chu</li>
+            <li>Quan ao nam
+                <ul class="menu2">
+                    <li>Quan ao nam</li>
+                    <li>Quan ao nam</li>
+                    <li>Quan ao nam</li>
+                </ul>
+            </li>
+            <li>Quan ao nu</li>
+            <li>Quan ao tre em</li>
+        </ul>
+    </div>
+</body>
+</html>
